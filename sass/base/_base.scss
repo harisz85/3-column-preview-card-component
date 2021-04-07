@@ -1,0 +1,42 @@
+:root {
+
+    //Primart colors
+
+    --bright-orange:rgba(227, 136, 38, 1);
+    --dark-cyan: rgba(0, 105, 112, 1);
+    --very-dark-cyan: rgba(0, 66, 65, 1);
+
+    //Neutral colors
+
+    --transparent-white:rgba(255, 255, 255, 0.75); //paragraphs
+    --very-light-gray:rgba(242, 242, 242, 1); // background, headings, buttons
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+*,
+*::after,
+*::before {
+    
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+
+    font-family: 'Lexend Deca', sans-serif;
+    
+
+}
+
+body {
+    background-color: var(--very-light-gray);
+    
+}

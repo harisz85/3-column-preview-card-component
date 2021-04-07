@@ -1,0 +1,146 @@
+.container {
+    width:70%;
+    margin: 5% 20rem;
+
+    @media screen and (max-width:75em) {
+        width: 90%;
+        margin: 4.5rem;
+    }
+
+    @media screen and (max-width:56.25em) {
+        width: 90%;
+        margin: 3rem;
+    }
+
+    @media screen and (max-width:37.5em) {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+
+    @media screen and (max-width:25em) {
+        width: 90%;
+    }
+
+}
+
+
+
+
+.col {
+
+    width: calc((100% / 3) );
+    float:left;
+    padding: 2rem 2rem 5rem;
+
+    &__one {
+        background-color: var(--bright-orange);
+    }
+
+    &__two {
+        background-color: var(--dark-cyan);
+    }
+
+    &__three {
+        background-color: var(--very-dark-cyan);
+    }
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+    @media screen and (max-width:600px) {
+        float: none;
+    }
+
+
+    @media screen and (max-width:37.5em) {
+        width: 100%;
+        padding-bottom: 7rem;
+    }
+}
+
+.heading-primary {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    color: var(--transparent-white);
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+.paragraph {
+
+    color: var(--transparent-white);
+    letter-spacing: .1rem;
+    line-height: 2;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+
+
+    @media screen and (max-width:56.25em) {
+        padding-right: 0;
+    }
+
+    @media screen and (max-width:37.5em) {
+        width: 75%;
+        letter-spacing: .15rem;
+        padding-bottom: 3rem;
+
+    }
+
+    @media screen and (max-width:25em) {
+        line-height: 1.5;
+    }
+}
+
+.btn {
+    background-color: var(--transparent-white);
+    border-color: var(--transparent-white);
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+
+    &__link {
+
+        text-decoration: none;
+        font-size: 1.2rem;
+
+        &--one {
+            color: var(--bright-orange);
+        }
+
+        &--two {
+            color: var(--dark-cyan);
+        }
+
+        &--three {
+            color: var(--very-dark-cyan);
+        }
+
+
+    }
+
+    &:hover,
+    &:active {
+        background-color: inherit;
+
+        & .btn__link {
+
+            color: var(--transparent-white);
+        }
+    }
+
+    @media screen and (max-width:37.5em) {
+        padding:1rem 3rem;
+    }
+}
+
+
+
+
+.image {
+    padding-top: 1rem;
+    display: inline-block;
+}
